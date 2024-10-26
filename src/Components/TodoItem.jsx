@@ -1,17 +1,17 @@
-function AddTodo() {
+function TodoItem({ TodoName, TodoDate }) {
     return <div className="container text-center">
         <div className='row kg-row'>
             <div className="col-6">
-                <input type="text" placeholder="Enter Todo Here" />
+                {TodoName}
             </div>
             <div className="col-4">
-                <input type="date" />
+                {TodoDate}
             </div>
             <div className="col-2">
-                <button className='btn btn-success w-50'>Add</button>
+                <button className='btn btn-danger w-50'>Delete</button>
             </div>
         </div>
     </div>
 }
 
-export default AddTodo;
+export default TodoItem;
